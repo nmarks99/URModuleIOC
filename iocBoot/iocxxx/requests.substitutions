@@ -32,6 +32,6 @@ pattern
 {"Req5:"    4,       2,       1, "action_id"}
 {"Req6:"    5,       0,       1, "status"}
 
-{"Req7:"    6,       0,       1, ""}
-{"Req8:"    7,       0,       1, ""}
+{"Req7:"    6,       2,       1, "action_id"}
+{"Req8:"    7,       0,       1, "status"}
 }

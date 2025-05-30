@@ -1,8 +1,8 @@
 # home: Annotated[Union[LocationArgument, list], "Home location"],
-# source: Annotated[Union[LocationArgument, list], "Location to transfer sample from"],
-# source_approach_axis: Annotated[Optional[str], "Source location approach axis, (X/Y/Z)"] = "z",
-# source_approach_distance: Annotated[Optional[float], "Approach distance in meters"] = 0.05,
-# gripper_close: Annotated[Optional[int], "Set a min value for the gripper close state"] = 255,
+# target: Annotated[Union[LocationArgument, list], "Location to transfer sample to"],
+# target_approach_axis: Annotated[Optional[str], "Source location approach axis, (X/Y/Z)"] = "z",
+# target_approach_distance: Annotated[Optional[float], "Approach distance in meters"] = 0.05,
+# gripper_open: Annotated[Optional[int], "Set a max value for the gripper open state"] = 0,
 # joint_angle_locations: Annotated[bool, "Use joint angles for all the locations"] = True,
 
 # TCP offset:
@@ -29,52 +29,52 @@
 # 0.016039212070336314,
 # 0.0002724668869880679
 
-record(ao, "$(P)UR:GripperPick:Home1") {
+record(ao, "$(P)UR:GripperPlace:Home1") {
     field(VAL, "-1.585")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home2") {
+record(ao, "$(P)UR:GripperPlace:Home2") {
     field(VAL, "-1.305")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home3") {
+record(ao, "$(P)UR:GripperPlace:Home3") {
     field(VAL, "-1.805")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home4") {
+record(ao, "$(P)UR:GripperPlace:Home4") {
     field(VAL, "-1.579")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home5") {
+record(ao, "$(P)UR:GripperPlace:Home5") {
     field(VAL, "1.605")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home6") {
+record(ao, "$(P)UR:GripperPlace:Home6") {
     field(VAL, "0.0")
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:GripperPick:Source1") {
+record(ao, "$(P)UR:GripperPlace:Target1") {
     field(VAL, "-0.1283")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source2") {
+record(ao, "$(P)UR:GripperPlace:Target2") {
     field(VAL, "-0.2391")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source3") {
+record(ao, "$(P)UR:GripperPlace:Target3") {
     field(VAL, "0.1531")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source4") {
+record(ao, "$(P)UR:GripperPlace:Target4") {
     field(VAL, "-0.019")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source5") {
+record(ao, "$(P)UR:GripperPlace:Target5") {
     field(VAL, "0.016")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source6") {
+record(ao, "$(P)UR:GripperPlace:Target6") {
     field(VAL, "0.0")
     field(PREC, 6)
 }
@@ -85,13 +85,13 @@ record(bo, "$(P)UR:CoordinateSpace") {
     field(ONAM, "Joint")
 }
 
-record(bo, "$(P)UR:GripperPick:Run") {
-    field(FLNK, "$(P)UR:GripperPick:set_post_url.PROC")
+record(bo, "$(P)UR:GripperPlace:Run") {
+    field(FLNK, "$(P)UR:GripperPlace:set_post_url.PROC")
 }
 
-record(luascript, "$(P)UR:GripperPick:set_post_url") {
+record(luascript, "$(P)UR:GripperPlace:set_post_url") {
     field(INPA, "$(P)UR:CoordinateSpace.VAL")
-    field(CODE, "@ur_module.lua gripper_pick_set_post_url({P='$(P)',host='$(HOST)'})")
+    field(CODE, "@ur_module.lua gripper_place_set_post_url({P='$(P)',host='$(HOST)'})")
     field(SYNC, "Sync")
     field(OUT, "$(P)$(R1)FullURL.VAL$ PP")
     field(FLNK, "$(P)$(R1)Post.PROC")

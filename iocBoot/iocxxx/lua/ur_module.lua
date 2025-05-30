@@ -90,6 +90,38 @@ function gripper_pick_set_post_url(args)
     return string_to_table(full_url)
 end
 
+function gripper_place_set_post_url(args)
+    local cspace = epics.get(string.format("%sUR:CoordinateSpace.VAL", args.P))
+    local use_joint_space = cspace == 1 and true or false
+
+    local home1 = epics.get(string.format("%sUR:GripperPlace:Home1.VAL", args.P))
+    local home2 = epics.get(string.format("%sUR:GripperPlace:Home2.VAL", args.P))
+    local home3 = epics.get(string.format("%sUR:GripperPlace:Home3.VAL", args.P))
+    local home4 = epics.get(string.format("%sUR:GripperPlace:Home4.VAL", args.P))
+    local home5 = epics.get(string.format("%sUR:GripperPlace:Home5.VAL", args.P))
+    local home6 = epics.get(string.format("%sUR:GripperPlace:Home6.VAL", args.P))
+    
+    local target1 = epics.get(string.format("%sUR:GripperPlace:Target1.VAL", args.P))
+    local target2 = epics.get(string.format("%sUR:GripperPlace:Target2.VAL", args.P))
+    local target3 = epics.get(string.format("%sUR:GripperPlace:Target3.VAL", args.P))
+    local target4 = epics.get(string.format("%sUR:GripperPlace:Target4.VAL", args.P))
+    local target5 = epics.get(string.format("%sUR:GripperPlace:Target5.VAL", args.P))
+    local target6 = epics.get(string.format("%sUR:GripperPlace:Target6.VAL", args.P))
+
+    local url = string.format("http://%s/action?action_name=gripper_place", args.host)
+    local action_vars = {
+        home = {home1, home2, home3, home4, home5, home6},
+        target = {target1, target2, target3, target4, target5, target6},
+        joint_angle_locations = use_joint_space,
+    }
+
+    local json_args = json.encode(action_vars)
+    local encoded_args = urlencode(json_args)
+    full_url = url .. "&args=" .. encoded_args
+
+    return string_to_table(full_url)
+end
+
 function move_params_set_post_url(args)
     local p1 = epics.get(string.format("%sUR:MoveParams:TCPOffset_X.VAL", args.P))
     local p2 = epics.get(string.format("%sUR:MoveParams:TCPOffset_Y.VAL", args.P))
