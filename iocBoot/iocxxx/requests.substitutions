@@ -25,4 +25,13 @@ pattern
 {R,      ADDR,  METHOD,  FORMAT, PARSE}
 {"Req1:"    0,       2,       1, "action_id"}
 {"Req2:"    1,       0,       1, "status"}
+
+{"Req3:"    2,       2,       1, "action_id"}
+{"Req4:"    3,       0,       1, "status"}
+
+{"Req5:"    4,       2,       1, "action_id"}
+{"Req6:"    5,       0,       1, "status"}
+
+{"Req7:"    6,       0,       1, ""}
+{"Req8:"    7,       0,       1, ""}
 }

@@ -1,4 +1,7 @@
 # Paths are relative to iocBoot/iocxxx
 epicsEnvSet("LUA_SCRIPT_PATH", "lua/")
 dbLoadTemplate("requests.substitutions", "P=$(PREFIX),PORT=$(PORT)")
-dbLoadRecords("ur_module.db", "P=$(PREFIX),R1=Req1:,R2=Req2:,HOST=localhost:3030")
+
+dbLoadRecords("set_movement_params.db", "P=$(PREFIX),R1=Req1:,R2=Req2:,HOST=localhost:3030")
+dbLoadRecords("toggle_gripper.db", "P=$(PREFIX),R1=Req3:,R2=Req4:,HOST=localhost:3030")
+dbLoadRecords("gripper_pick.db", "P=$(PREFIX),R1=Req5:,R2=Req6:,HOST=localhost:3030")

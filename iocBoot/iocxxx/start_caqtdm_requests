@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
+ASYN_HTTP_CLIENT=/home/beams/NMARKS/devel/asynHttpClient
+
 if [ "" == "${EPICS_CA_MAX_ARRAY_BYTES}" ]; then
     #export EPICS_CA_MAX_ARRAY_BYTES=64008
     export EPICS_CA_MAX_ARRAY_BYTES=8000100
 fi
 echo "Using EPICS_CA_MAX_ARRAY_BYTES = ${EPICS_CA_MAX_ARRAY_BYTES}"
 
-export CAQTDM_DISPLAY_PATH=${CAQTDM_DISPLAY_PATH}:"../../../../asynHttpClientApp/op/ui"
+export CAQTDM_DISPLAY_PATH=${CAQTDM_DISPLAY_PATH}:"${ASYN_HTTP_CLIENT}/asynHttpClientApp/op/ui"
 
-/APSshare/bin/caQtDM -macro "P=xxx:,R=http:" http_client.ui &
+/APSshare/bin/caQtDM -macro "P=xxx:,R=${1}" http_client.ui &
