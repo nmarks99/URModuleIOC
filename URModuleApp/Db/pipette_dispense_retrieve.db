@@ -76,7 +76,7 @@ record(bo, "$(P)$(R)PipetteDR:JointAngleLocations") {
     field(VAL, 1)
     field(ZNAM, "Cartesian")
     field(ONAM, "Joint")
-    field(FLNK, "$(P)$(R)PipetteDR:Units.PROC")
+    field(FLNK, "$(P)$(R)PipetteDR:LocationUnits.PROC")
 }
 
 record(bi, "$(P)$(R)PipetteDR:LocationUnits") {

@@ -37,4 +37,7 @@ pattern
 
 {"Req9:"     6,       2,       1, "action_id"}
 {"Req10:"    7,       0,       1, "status"}
+
+{"Req11:"    6,       2,       1, "action_id"}
+{"Req12:"    7,       0,       1, "status"}
 }

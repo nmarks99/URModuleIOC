@@ -187,3 +187,52 @@ function pipette_dr_set_post_url(args)
 
     return string_to_table(full_url)
 end
+
+function pipette_pms_set_post_url(args)
+
+    local home1 = epics.get(string.format("%s%sPipettePMS:Home1.VAL", args.P, args.R))
+    local home2 = epics.get(string.format("%s%sPipettePMS:Home2.VAL", args.P, args.R))
+    local home3 = epics.get(string.format("%s%sPipettePMS:Home3.VAL", args.P, args.R))
+    local home4 = epics.get(string.format("%s%sPipettePMS:Home4.VAL", args.P, args.R))
+    local home5 = epics.get(string.format("%s%sPipettePMS:Home5.VAL", args.P, args.R))
+    local home6 = epics.get(string.format("%s%sPipettePMS:Home6.VAL", args.P, args.R))
+
+    local target1 = epics.get(string.format("%s%sPipettePMS:Target1.VAL", args.P, args.R))
+    local target2 = epics.get(string.format("%s%sPipettePMS:Target2.VAL", args.P, args.R))
+    local target3 = epics.get(string.format("%s%sPipettePMS:Target3.VAL", args.P, args.R))
+    local target4 = epics.get(string.format("%s%sPipettePMS:Target4.VAL", args.P, args.R))
+    local target5 = epics.get(string.format("%s%sPipettePMS:Target5.VAL", args.P, args.R))
+    local target6 = epics.get(string.format("%s%sPipettePMS:Target6.VAL", args.P, args.R))
+
+    local sample1 = epics.get(string.format("%s%sPipettePMS:Sample1.VAL", args.P, args.R))
+    local sample2 = epics.get(string.format("%s%sPipettePMS:Sample2.VAL", args.P, args.R))
+    local sample3 = epics.get(string.format("%s%sPipettePMS:Sample3.VAL", args.P, args.R))
+    local sample4 = epics.get(string.format("%s%sPipettePMS:Sample4.VAL", args.P, args.R))
+    local sample5 = epics.get(string.format("%s%sPipettePMS:Sample5.VAL", args.P, args.R))
+    local sample6 = epics.get(string.format("%s%sPipettePMS:Sample6.VAL", args.P, args.R))
+
+    local tip1 = epics.get(string.format("%s%sPipettePMS:Tip1.VAL", args.P, args.R))
+    local tip2 = epics.get(string.format("%s%sPipettePMS:Tip2.VAL", args.P, args.R))
+    local tip3 = epics.get(string.format("%s%sPipettePMS:Tip3.VAL", args.P, args.R))
+    local tip4 = epics.get(string.format("%s%sPipettePMS:Tip4.VAL", args.P, args.R))
+    local tip5 = epics.get(string.format("%s%sPipettePMS:Tip5.VAL", args.P, args.R))
+    local tip6 = epics.get(string.format("%s%sPipettePMS:Tip6.VAL", args.P, args.R))
+
+    local url = string.format("http://%s/action?action_name=pipette_pick_and_move_sample", args.host)
+    local action_vars = {
+        home = {home1, home2, home3, home4, home5, home6},
+        sample = {sample1, sample2, sample3, sample4, sample5, sample6},
+        target = {target1, target2, target3, target4, target5, target6},
+        volume = B,
+        tip = {tip1, tip2, tip3, tip4, tip5, tip6},
+        use_joint_angles = (A == 1 and true or false)
+
+    }
+
+    local json_args = json.encode(action_vars)
+    local encoded_args = urlencode(json_args)
+    full_url = url .. "&args=" .. encoded_args
+    print(full_url)
+
+    return string_to_table(full_url)
+end

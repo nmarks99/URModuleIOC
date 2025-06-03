@@ -20,7 +20,8 @@ dbLoadRecords("$(TOP)/db/set_movement_params.db", "P=$(PREFIX),R=UR3:,RQ1=Req1:,
 dbLoadRecords("$(TOP)/db/toggle_gripper.db", "P=$(PREFIX),R=UR3:,RQ1=Req3:,RQ2=Req4:,HOST=localhost:3030")
 dbLoadRecords("$(TOP)/db/gripper_pick.db", "P=$(PREFIX),R=UR3:,RQ1=Req5:,RQ2=Req6:,HOST=localhost:3030")
 dbLoadRecords("$(TOP)/db/gripper_place.db", "P=$(PREFIX),R=UR3:,RQ1=Req7:,RQ2=Req8:,HOST=localhost:3030")
-dbLoadRecords("$(TOP)/db/pipette_dispense_and_retrieve.db", "P=$(PREFIX),R=UR3:,RQ1=Req9:,RQ2=Req10:,HOST=localhost:3030")
+dbLoadRecords("$(TOP)/db/pipette_dispense_retrieve.db", "P=$(PREFIX),R=UR3:,RQ1=Req9:,RQ2=Req10:,HOST=localhost:3030")
+dbLoadRecords("$(TOP)/db/pipette_pick_move_sample.db", "P=$(PREFIX),R=UR3:,RQ1=Req11:,RQ2=Req12:,HOST=localhost:3030")
 
 ###############################################################################
 iocInit
