@@ -13,42 +13,34 @@
 # - 0.0024
 
 record(ao, "$(P)$(R)MoveParams:TCPOffset_X") {
-    # field(VAL, 0.00256)
     field(PREC, 6)
 }
 
 record(ao, "$(P)$(R)MoveParams:TCPOffset_Y") {
-    # field(VAL, -0.00115)
     field(PREC, 6)
 }
 
 record(ao, "$(P)$(R)MoveParams:TCPOffset_Z") {
-    # field(VAL, 0.1506)
     field(PREC, 6)
 }
 
 record(ao, "$(P)$(R)MoveParams:TCPOffset_Roll") {
-    # field(VAL, -0.0203)
     field(PREC, 6)
 }
 
 record(ao, "$(P)$(R)MoveParams:TCPOffset_Pitch") {
-    # field(VAL, -3.0925)
     field(PREC, 6)
 }
 
 record(ao, "$(P)$(R)MoveParams:TCPOffset_Yaw") {
-    # field(VAL, 0.0024)
     field(PREC, 6)
 }
 
 record(ao, "$(P)$(R)MoveParams:Velocity") {
-    # field(VAL, 0.05)
     field(PREC, 6)
 }
 
 record(ao, "$(P)$(R)MoveParams:Acceleration") {
-    # field(VAL, 0.1)
     field(PREC, 6)
 }
 
