@@ -1,0 +1,44 @@
+# home: Annotated[Union[LocationArgument, list], "Home location"],
+# source: Annotated[Union[LocationArgument, list], "Initial location of the sample"],
+# target: Annotated[Union[LocationArgument, list], "Target location of the sample"],
+# tip_loc: Annotated[Union[LocationArgument, list], "New tip location"],
+# tip_trash: Annotated[Union[LocationArgument, list], "Tip trash location"],
+# volume: Annotated[float, "Set a volume in micro liters"],
+# joint_angle_locations: Annotated[bool, "Use joint angles for all the locations"] = True,
+$(P)$(R)PipetteTransfer:Home1.VAL
+$(P)$(R)PipetteTransfer:Home2.VAL
+$(P)$(R)PipetteTransfer:Home3.VAL
+$(P)$(R)PipetteTransfer:Home4.VAL
+$(P)$(R)PipetteTransfer:Home5.VAL
+$(P)$(R)PipetteTransfer:Home6.VAL
+
+$(P)$(R)PipetteTransfer:Source1.VAL
+$(P)$(R)PipetteTransfer:Source2.VAL
+$(P)$(R)PipetteTransfer:Source3.VAL
+$(P)$(R)PipetteTransfer:Source4.VAL
+$(P)$(R)PipetteTransfer:Source5.VAL
+$(P)$(R)PipetteTransfer:Source6.VAL
+
+$(P)$(R)PipetteTransfer:Target1.VAL
+$(P)$(R)PipetteTransfer:Target2.VAL
+$(P)$(R)PipetteTransfer:Target3.VAL
+$(P)$(R)PipetteTransfer:Target4.VAL
+$(P)$(R)PipetteTransfer:Target5.VAL
+$(P)$(R)PipetteTransfer:Target6.VAL
+
+$(P)$(R)PipetteTransfer:Tip1.VAL
+$(P)$(R)PipetteTransfer:Tip2.VAL
+$(P)$(R)PipetteTransfer:Tip3.VAL
+$(P)$(R)PipetteTransfer:Tip4.VAL
+$(P)$(R)PipetteTransfer:Tip5.VAL
+$(P)$(R)PipetteTransfer:Tip1.VAL
+
+$(P)$(R)PipetteTransfer:TipTrash2.VAL
+$(P)$(R)PipetteTransfer:TipTrash3.VAL
+$(P)$(R)PipetteTransfer:TipTrash4.VAL
+$(P)$(R)PipetteTransfer:TipTrash5.VAL
+$(P)$(R)PipetteTransfer:TipTrash6.VAL
+$(P)$(R)PipetteTransfer:TipTrash6.VAL
+
+$(P)$(R)PipetteTransfer:Volume.VAL
+$(P)$(R)PipetteTransfer:JointAngleLocations.VAL

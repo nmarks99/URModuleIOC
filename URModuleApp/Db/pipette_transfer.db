@@ -1,0 +1,141 @@
+# home: Annotated[Union[LocationArgument, list], "Home location"],
+# source: Annotated[Union[LocationArgument, list], "Initial location of the sample"],
+# target: Annotated[Union[LocationArgument, list], "Target location of the sample"],
+# tip_loc: Annotated[Union[LocationArgument, list], "New tip location"],
+# tip_trash: Annotated[Union[LocationArgument, list], "Tip trash location"],
+# volume: Annotated[float, "Set a volume in micro liters"],
+# joint_angle_locations: Annotated[bool, "Use joint angles for all the locations"] = True,
+
+record(ao, "$(P)$(R)PipetteTransfer:Home1") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Home2") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Home3") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Home4") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Home5") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Home6") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+
+record(ao, "$(P)$(R)PipetteTransfer:Source1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Source2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Source3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Source4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Source5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Source6") {
+    field(PREC, 6)
+}
+
+record(ao, "$(P)$(R)PipetteTransfer:Target1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Target2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Target3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Target4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Target5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Target6") {
+    field(PREC, 6)
+}
+
+
+record(ao, "$(P)$(R)PipetteTransfer:Tip1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Tip2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Tip3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Tip4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Tip5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:Tip6") {
+    field(PREC, 6)
+}
+
+record(ao, "$(P)$(R)PipetteTransfer:TipTrash1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:TipTrash2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:TipTrash3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:TipTrash4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:TipTrash5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteTransfer:TipTrash6") {
+    field(PREC, 6)
+}
+
+record(ao, "$(P)$(R)PipetteTransfer:Volume") {
+    field(EGU, "uL")
+    field(PREC, 3)
+}
+
+record(bo, "$(P)$(R)PipetteTransfer:JointAngleLocations") {
+    field(VAL, 1)
+    field(ZNAM, "Cartesian")
+    field(ONAM, "Joint")
+    field(FLNK, "$(P)$(R)PipetteTransfer:LocationUnits.PROC")
+}
+
+record(bi, "$(P)$(R)PipetteTransfer:LocationUnits") {
+    field(PINI, 1)
+    field(INP, "$(P)$(R)PipetteTransfer:JointAngleLocations")
+    field(ZNAM, "m,rad")
+    field(ONAM, "rad")
+}
+
+record(bo, "$(P)$(R)PipetteTransfer:Run") {
+    field(FLNK, "$(P)$(R)PipetteTransfer:set_post_url.PROC")
+}
+
+record(luascript, "$(P)$(R)PipetteTransfer:set_post_url") {
+    field(INPA, "$(P)$(R)PipetteTransfer:JointAngleLocations.VAL")
+    field(INPB, "$(P)$(R)PipetteTransfer:Volume.VAL")
+    field(CODE, "@ur_module.lua pipette_transfer_set_post_url({P='$(P)',R='$(R)',host='$(HOST)'})")
+    field(SYNC, "Sync")
+    field(OUT, "$(P)$(RQ1)URL.VAL$ PP")
+    # field(FLNK, "$(P)$(RQ1)Post.PROC")
+}

@@ -1,7 +1,8 @@
--- Correct path to ASYN_HTTP_CLIENT
-local ASYN_HTTP_CLIENT = "/home/beams/NMARKS/devel/asynHttpClient/"
-package.path = ASYN_HTTP_CLIENT .. "asynHttpClientApp/src/lua/?.lua;" .. package.path
+-- ur_module.lua
+-- Functions for constructing URLs for UR REST Node from PVs
 
+-- Make sure lunajson is in your lua package path.
+-- You can set LUA_PATH with epicsEnvSet(LUA_PATH, "...")
 epics = require("epics")
 json = require("lunajson")
 
@@ -43,9 +44,6 @@ function toggle_gripper_set_post_url(args)
     local json_args = json.encode(action_vars)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
-
-    -- io.write("URL: ")
-    -- print(full_url)
 
     return string_to_table(full_url)
 end
@@ -227,6 +225,69 @@ function pipette_pms_set_post_url(args)
         tip = {tip1, tip2, tip3, tip4, tip5, tip6},
         use_joint_angles = (A == 1 and true or false)
 
+    }
+
+    local json_args = json.encode(action_vars)
+    local encoded_args = urlencode(json_args)
+    full_url = url .. "&args=" .. encoded_args
+    print(full_url)
+
+    return string_to_table(full_url)
+end
+
+-- # home: Annotated[Union[LocationArgument, list], "Home location"],
+-- # source: Annotated[Union[LocationArgument, list], "Initial location of the sample"],
+-- # target: Annotated[Union[LocationArgument, list], "Target location of the sample"],
+-- # tip_loc: Annotated[Union[LocationArgument, list], "New tip location"],
+-- # tip_trash: Annotated[Union[LocationArgument, list], "Tip trash location"],
+-- # volume: Annotated[float, "Set a volume in micro liters"],
+-- # joint_angle_locations: Annotated[bool, "Use joint angles for all the locations"] = True,
+function pipette_transfer_set_post_url(args)
+
+    local home1 = epics.get(string.format("%s%sPipetteTransfer:Home1.VAL", args.P, args.R))
+    local home2 = epics.get(string.format("%s%sPipetteTransfer:Home2.VAL", args.P, args.R))
+    local home3 = epics.get(string.format("%s%sPipetteTransfer:Home3.VAL", args.P, args.R))
+    local home4 = epics.get(string.format("%s%sPipetteTransfer:Home4.VAL", args.P, args.R))
+    local home5 = epics.get(string.format("%s%sPipetteTransfer:Home5.VAL", args.P, args.R))
+    local home6 = epics.get(string.format("%s%sPipetteTransfer:Home6.VAL", args.P, args.R))
+    
+    local source1 = epics.get(string.format("%s%sPipetteTransfer:Source1.VAL", args.P, args.R))
+    local source2 = epics.get(string.format("%s%sPipetteTransfer:Source2.VAL", args.P, args.R))
+    local source3 = epics.get(string.format("%s%sPipetteTransfer:Source3.VAL", args.P, args.R))
+    local source4 = epics.get(string.format("%s%sPipetteTransfer:Source4.VAL", args.P, args.R))
+    local source5 = epics.get(string.format("%s%sPipetteTransfer:Source5.VAL", args.P, args.R))
+    local source6 = epics.get(string.format("%s%sPipetteTransfer:Source6.VAL", args.P, args.R))
+
+    local target1 = epics.get(string.format("%s%sPipetteTransfer:Target1.VAL", args.P, args.R))
+    local target2 = epics.get(string.format("%s%sPipetteTransfer:Target2.VAL", args.P, args.R))
+    local target3 = epics.get(string.format("%s%sPipetteTransfer:Target3.VAL", args.P, args.R))
+    local target4 = epics.get(string.format("%s%sPipetteTransfer:Target4.VAL", args.P, args.R))
+    local target5 = epics.get(string.format("%s%sPipetteTransfer:Target5.VAL", args.P, args.R))
+    local target6 = epics.get(string.format("%s%sPipetteTransfer:Target6.VAL", args.P, args.R))
+
+    local tip1 = epics.get(string.format("%s%sPipetteTransfer:Tip1.VAL", args.P, args.R))
+    local tip2 = epics.get(string.format("%s%sPipetteTransfer:Tip2.VAL", args.P, args.R))
+    local tip3 = epics.get(string.format("%s%sPipetteTransfer:Tip3.VAL", args.P, args.R))
+    local tip4 = epics.get(string.format("%s%sPipetteTransfer:Tip4.VAL", args.P, args.R))
+    local tip5 = epics.get(string.format("%s%sPipetteTransfer:Tip5.VAL", args.P, args.R))
+    local tip6 = epics.get(string.format("%s%sPipetteTransfer:Tip6.VAL", args.P, args.R))
+
+    local tiptrash1 = epics.get(string.format("%s%sPipetteTransfer:TipTrash1.VAL", args.P, args.R))
+    local tiptrash2 = epics.get(string.format("%s%sPipetteTransfer:TipTrash2.VAL", args.P, args.R))
+    local tiptrash3 = epics.get(string.format("%s%sPipetteTransfer:TipTrash3.VAL", args.P, args.R))
+    local tiptrash4 = epics.get(string.format("%s%sPipetteTransfer:TipTrash4.VAL", args.P, args.R))
+    local tiptrash5 = epics.get(string.format("%s%sPipetteTransfer:TipTrash5.VAL", args.P, args.R))
+    local tiptrash6 = epics.get(string.format("%s%sPipetteTransfer:TipTrash6.VAL", args.P, args.R))
+    
+    local url = string.format("http://%s/action?action_name=pipette_transfer", args.host)
+    local action_vars = {
+        home = {home1, home2, home3, home4, home5, home6},
+        source = {source1, source2, source3, source4, source5, source6},
+        target = {target1, target2, target3, target4, target5, target6},
+        tip = {tip1, tip2, tip3, tip4, tip5, tip6},
+        tiptrash = {tiptrash1, tiptrash2, tiptrash3, tiptrash4, tiptrash5, tiptrash6},
+        volume = B,
+        use_joint_angles = (A == 1 and true or false)
     }
 
     local json_args = json.encode(action_vars)

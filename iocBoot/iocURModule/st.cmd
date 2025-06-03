@@ -14,6 +14,10 @@ epicsEnvSet("LUA_SCRIPT_PATH", "lua/")
 AsynHttpClientConfig("client1")
 dbLoadTemplate("requests.substitutions", "P=$(PREFIX),PORT=client1")
 
+# We use the lunajson lua library included with ASYN_HTTP_CLIENT,
+# so we must append to the lua package path
+epicsEnvSet("LUA_PATH", "$(ASYN_HTTP_CLIENT)/asynHttpClientApp/src/lua/?.lua;$(LUA_PATH=)")
+
 # Load database for each REST node action
 # NOTE: only toggle_gripper uses its RQ2 request at the moment
 dbLoadRecords("$(TOP)/db/set_movement_params.db", "P=$(PREFIX),R=UR3:,RQ1=Req1:,RQ2=Req2:,HOST=localhost:3030")
