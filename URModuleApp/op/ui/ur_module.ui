@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>610</width>
-    <height>567</height>
+    <width>619</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -483,7 +483,7 @@ caMenu{
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>320</y>
+      <y>315</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -1272,7 +1272,7 @@ caMenu{
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>535</y>
+      <y>530</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -2031,6 +2031,1059 @@ caMenu{
     </property>
     <property name="colorMode">
      <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_89">
+    <property name="geometry">
+     <rect>
+      <x>245</x>
+      <y>680</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Tip3.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_90">
+    <property name="geometry">
+     <rect>
+      <x>245</x>
+      <y>655</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Target3.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_91">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>630</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Source1.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_92">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>680</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Tip2.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>705</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tip Trash:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_93">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>630</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Source5.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_94">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>680</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Tip1.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_95">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>605</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Home6.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_96">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>655</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Target5.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_11">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>680</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:LocationUnits</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>730</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Volume:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_97">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>655</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Target1.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_98">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>680</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Tip4.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_99">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>705</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:TipTrash2.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_100">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>630</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Source4.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_101">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>705</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:TipTrash4.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_102">
+    <property name="geometry">
+     <rect>
+      <x>245</x>
+      <y>605</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Home3.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>680</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tip:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_103">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>655</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Target4.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_104">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>630</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Source2.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_12">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>705</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:LocationUnits</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_105">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>680</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Tip5.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_106">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>705</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:TipTrash5.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_107">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>705</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:TipTrash6.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_108">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>655</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Target2.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>605</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Home:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_109">
+    <property name="geometry">
+     <rect>
+      <x>245</x>
+      <y>705</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:TipTrash3.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_110">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>655</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Target6.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>655</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Target:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_111">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>605</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Home2.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_112">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>605</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Home5.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_13">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>605</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Home1.EGU</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_113">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>605</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Home4.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_114">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>705</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:TipTrash1.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_14">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>730</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Volume.EGU</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_15">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>655</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:LocationUnits</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_16">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>630</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:LocationUnits</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>630</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Source:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_115">
+    <property name="geometry">
+     <rect>
+      <x>245</x>
+      <y>630</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Source3.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_116">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>680</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Tip6.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_117">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>730</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Volume.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_118">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>630</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Source6.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_119">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>605</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Home1.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caChoice" name="cachoice_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>755</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:JointAngleLocations.VAL</string>
+    </property>
+    <property name="stackingMode" stdset="0">
+     <enum>caChoice::Column</enum>
+    </property>
+    <property name="endBit">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>580</y>
+      <width>236</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pipette Transfer</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_7">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>580</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteTransfer:Run.PROC</string>
+    </property>
+    <property name="label">
+     <string notr="true">Run</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="releaseMessage">
+     <string notr="true">1</string>
     </property>
    </widget>
   </widget>

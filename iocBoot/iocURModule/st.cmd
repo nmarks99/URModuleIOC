@@ -26,6 +26,7 @@ dbLoadRecords("$(TOP)/db/gripper_pick.db", "P=$(PREFIX),R=UR3:,RQ1=Req5:,RQ2=Req
 dbLoadRecords("$(TOP)/db/gripper_place.db", "P=$(PREFIX),R=UR3:,RQ1=Req7:,RQ2=Req8:,HOST=localhost:3030")
 dbLoadRecords("$(TOP)/db/pipette_dispense_retrieve.db", "P=$(PREFIX),R=UR3:,RQ1=Req9:,RQ2=Req10:,HOST=localhost:3030")
 dbLoadRecords("$(TOP)/db/pipette_pick_move_sample.db", "P=$(PREFIX),R=UR3:,RQ1=Req11:,RQ2=Req12:,HOST=localhost:3030")
+dbLoadRecords("$(TOP)/db/pipette_transfer.db", "P=$(PREFIX),R=UR3:,RQ1=Req13:,RQ2=Req14:,HOST=localhost:3030")
 
 ###############################################################################
 iocInit

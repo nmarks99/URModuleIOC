@@ -173,9 +173,8 @@ function pipette_dr_set_post_url(args)
         home = {home1, home2, home3, home4, home5, home6},
         target = {target1, target2, target3, target4, target5, target6},
         volume = B,
-        tiptrash = {tiptrash1, tiptrash2, tiptrash3, tiptrash4, tiptrash5, tiptrash6},
-        use_joint_angles = (A == 1 and true or false)
-
+        tip_trash = {tiptrash1, tiptrash2, tiptrash3, tiptrash4, tiptrash5, tiptrash6},
+        joint_angle_locations = (A == 1 and true or false)
     }
 
     local json_args = json.encode(action_vars)
@@ -219,11 +218,11 @@ function pipette_pms_set_post_url(args)
     local url = string.format("http://%s/action?action_name=pipette_pick_and_move_sample", args.host)
     local action_vars = {
         home = {home1, home2, home3, home4, home5, home6},
-        sample = {sample1, sample2, sample3, sample4, sample5, sample6},
+        sample_loc = {sample1, sample2, sample3, sample4, sample5, sample6},
         target = {target1, target2, target3, target4, target5, target6},
         volume = B,
-        tip = {tip1, tip2, tip3, tip4, tip5, tip6},
-        use_joint_angles = (A == 1 and true or false)
+        tip_loc = {tip1, tip2, tip3, tip4, tip5, tip6},
+        joint_angle_locations = (A == 1 and true or false)
 
     }
 
@@ -284,10 +283,10 @@ function pipette_transfer_set_post_url(args)
         home = {home1, home2, home3, home4, home5, home6},
         source = {source1, source2, source3, source4, source5, source6},
         target = {target1, target2, target3, target4, target5, target6},
-        tip = {tip1, tip2, tip3, tip4, tip5, tip6},
-        tiptrash = {tiptrash1, tiptrash2, tiptrash3, tiptrash4, tiptrash5, tiptrash6},
+        tip_loc = {tip1, tip2, tip3, tip4, tip5, tip6},
+        tip_trash = {tiptrash1, tiptrash2, tiptrash3, tiptrash4, tiptrash5, tiptrash6},
         volume = B,
-        use_joint_angles = (A == 1 and true or false)
+        joint_anlge_locations = (A == 1 and true or false)
     }
 
     local json_args = json.encode(action_vars)
