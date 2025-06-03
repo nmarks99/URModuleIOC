@@ -1,4 +1,4 @@
-/* xxxMain.c */
+/* URModuleMain.c */
 /* Author:  Ron Sluiter */
 
 #include <stddef.h>

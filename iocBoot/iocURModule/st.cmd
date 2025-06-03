@@ -1,11 +1,11 @@
-# ../../bin/${EPICS_HOST_ARCH}/xxx st.cmd
+# ../../bin/${EPICS_HOST_ARCH}/URModule st.cmd
 < envPaths
 
-dbLoadDatabase("../../dbd/iocxxxLinux.dbd")
-iocxxxLinux_registerRecordDeviceDriver(pdbbase)
+dbLoadDatabase("../../dbd/iocURModuleLinux.dbd")
+iocURModuleLinux_registerRecordDeviceDriver(pdbbase)
 
 epicsEnvSet("IOCSH_PS1", "$(IOC)>")
-epicsEnvSet("PREFIX", "xxx:")
+epicsEnvSet("PREFIX", "URModule:")
 
 # Instantiate the client with a name
 AsynHttpClientConfig("client1")

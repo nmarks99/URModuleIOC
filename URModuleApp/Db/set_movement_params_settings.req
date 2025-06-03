@@ -1,0 +1,9 @@
+$(P)UR:MoveParams:TCPOffset_X.VAL
+$(P)UR:MoveParams:TCPOffset_Y.VAL
+$(P)UR:MoveParams:TCPOffset_Z.VAL
+$(P)UR:MoveParams:TCPOffset_Roll.VAL
+$(P)UR:MoveParams:TCPOffset_Pitch.VAL
+$(P)UR:MoveParams:TCPOffset_Yaw.VAL
+$(P)UR:MoveParams:Velocity.VAL
+$(P)UR:MoveParams:GripperSpeed.VAL
+$(P)UR:MoveParams:GripperForce.VAL
