@@ -1,0 +1,92 @@
+# home: Annotated[Union[LocationArgument, list], "Home location in joint angles"],
+# target: Annotated[Union[LocationArgument, list], "Location of the object"],
+# volume: Annotated[int, "Set a volume in micro liters"] = 10,
+# tip_trash: Annotated[Union[LocationArgument, list], "Tip trash location"] = None,
+# joint_angle_locations: Annotated[bool, "Use joint angles for all the locations"] = True,
+
+record(ao, "$(P)$(R)PipetteDR:Home1") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Home2") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Home3") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Home4") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Home5") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Home6") {
+    field(EGU, "rad")
+    field(PREC, 6)
+}
+
+record(ao, "$(P)$(R)PipetteDR:Target1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Target2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Target3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Target4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Target5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:Target6") {
+    field(PREC, 6)
+}
+
+record(ao, "$(P)$(R)PipetteDR:TipTrash1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:TipTrash2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:TipTrash3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:TipTrash4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:TipTrash5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:TipTrash6") {
+    field(PREC, 6)
+}
+
+record(ao, "$(P)$(R)PipetteDR:Volume") {
+    field(EGU, "uL")
+    field(PREC, 3)
+}
+
+record(bo, "$(P)$(R)PipetteDR:JointAngleLocations") {
+    field(VAL, 1)
+    field(ZNAM, "Cartesian")
+    field(ONAM, "Joint")
+}
+
+record(bo, "$(P)$(R)PipetteDR:Run") {
+    field(FLNK, "$(P)$(R)PipetteDR:set_post_url.PROC")
+}
+
+record(luascript, "$(P)$(R)PipetteDR:set_post_url") {
+    field(INPA, "$(P)$(R)PipetteDR:JointAngleLocations.VAL")
+    field(INPB, "$(P)$(R)PipetteDR:Volume.VAL")
+    field(CODE, "@ur_module.lua pipette_dr_set_post_url({P='$(P)',R='$(R)',host='$(HOST)'})")
+    field(SYNC, "Sync")
+    field(OUT, "$(P)$(RQ1)URL.VAL$ PP")
+    # field(FLNK, "$(P)$(RQ1)Post.PROC")
+}

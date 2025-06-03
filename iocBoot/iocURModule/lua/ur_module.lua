@@ -59,28 +59,28 @@ function toggle_gripper_set_get_url(args)
 end
 
 function gripper_pick_set_post_url(args)
-    local cspace = epics.get(string.format("%sUR:CoordinateSpace.VAL", args.P))
-    local use_joint_space = cspace == 1 and true or false
+    -- local cspace = epics.get(string.format("%s%sCoordinateSpace.VAL", args.P, args.R))
+    -- local use_joint_space = cspace == 1 and true or false
 
-    local home1 = epics.get(string.format("%sUR:GripperPick:Home1.VAL", args.P))
-    local home2 = epics.get(string.format("%sUR:GripperPick:Home2.VAL", args.P))
-    local home3 = epics.get(string.format("%sUR:GripperPick:Home3.VAL", args.P))
-    local home4 = epics.get(string.format("%sUR:GripperPick:Home4.VAL", args.P))
-    local home5 = epics.get(string.format("%sUR:GripperPick:Home5.VAL", args.P))
-    local home6 = epics.get(string.format("%sUR:GripperPick:Home6.VAL", args.P))
-    
-    local source1 = epics.get(string.format("%sUR:GripperPick:Source1.VAL", args.P))
-    local source2 = epics.get(string.format("%sUR:GripperPick:Source2.VAL", args.P))
-    local source3 = epics.get(string.format("%sUR:GripperPick:Source3.VAL", args.P))
-    local source4 = epics.get(string.format("%sUR:GripperPick:Source4.VAL", args.P))
-    local source5 = epics.get(string.format("%sUR:GripperPick:Source5.VAL", args.P))
-    local source6 = epics.get(string.format("%sUR:GripperPick:Source6.VAL", args.P))
+    local home1 = epics.get(string.format("%s%sGripperPick:Home1.VAL", args.P, args.R))
+    local home2 = epics.get(string.format("%s%sGripperPick:Home2.VAL", args.P, args.R))
+    local home3 = epics.get(string.format("%s%sGripperPick:Home3.VAL", args.P, args.R))
+    local home4 = epics.get(string.format("%s%sGripperPick:Home4.VAL", args.P, args.R))
+    local home5 = epics.get(string.format("%s%sGripperPick:Home5.VAL", args.P, args.R))
+    local home6 = epics.get(string.format("%s%sGripperPick:Home6.VAL", args.P, args.R))
+
+    local source1 = epics.get(string.format("%s%sGripperPick:Source1.VAL", args.P, args.R))
+    local source2 = epics.get(string.format("%s%sGripperPick:Source2.VAL", args.P, args.R))
+    local source3 = epics.get(string.format("%s%sGripperPick:Source3.VAL", args.P, args.R))
+    local source4 = epics.get(string.format("%s%sGripperPick:Source4.VAL", args.P, args.R))
+    local source5 = epics.get(string.format("%s%sGripperPick:Source5.VAL", args.P, args.R))
+    local source6 = epics.get(string.format("%s%sGripperPick:Source6.VAL", args.P, args.R))
 
     local url = string.format("http://%s/action?action_name=gripper_pick", args.host)
     local action_vars = {
         home = {home1, home2, home3, home4, home5, home6},
         source = {source1, source2, source3, source4, source5, source6},
-        joint_angle_locations = use_joint_space,
+        joint_angle_locations = (A == 1 and true or false),
     }
 
     local json_args = json.encode(action_vars)
@@ -91,28 +91,28 @@ function gripper_pick_set_post_url(args)
 end
 
 function gripper_place_set_post_url(args)
-    local cspace = epics.get(string.format("%sUR:CoordinateSpace.VAL", args.P))
-    local use_joint_space = cspace == 1 and true or false
+    -- local cspace = epics.get(string.format("%s%sCoordinateSpace.VAL", args.P, args.R))
+    -- local use_joint_space = cspace == 1 and true or false
 
-    local home1 = epics.get(string.format("%sUR:GripperPlace:Home1.VAL", args.P))
-    local home2 = epics.get(string.format("%sUR:GripperPlace:Home2.VAL", args.P))
-    local home3 = epics.get(string.format("%sUR:GripperPlace:Home3.VAL", args.P))
-    local home4 = epics.get(string.format("%sUR:GripperPlace:Home4.VAL", args.P))
-    local home5 = epics.get(string.format("%sUR:GripperPlace:Home5.VAL", args.P))
-    local home6 = epics.get(string.format("%sUR:GripperPlace:Home6.VAL", args.P))
-    
-    local target1 = epics.get(string.format("%sUR:GripperPlace:Target1.VAL", args.P))
-    local target2 = epics.get(string.format("%sUR:GripperPlace:Target2.VAL", args.P))
-    local target3 = epics.get(string.format("%sUR:GripperPlace:Target3.VAL", args.P))
-    local target4 = epics.get(string.format("%sUR:GripperPlace:Target4.VAL", args.P))
-    local target5 = epics.get(string.format("%sUR:GripperPlace:Target5.VAL", args.P))
-    local target6 = epics.get(string.format("%sUR:GripperPlace:Target6.VAL", args.P))
+    local home1 = epics.get(string.format("%s%sGripperPlace:Home1.VAL", args.P, args.R))
+    local home2 = epics.get(string.format("%s%sGripperPlace:Home2.VAL", args.P, args.R))
+    local home3 = epics.get(string.format("%s%sGripperPlace:Home3.VAL", args.P, args.R))
+    local home4 = epics.get(string.format("%s%sGripperPlace:Home4.VAL", args.P, args.R))
+    local home5 = epics.get(string.format("%s%sGripperPlace:Home5.VAL", args.P, args.R))
+    local home6 = epics.get(string.format("%s%sGripperPlace:Home6.VAL", args.P, args.R))
+
+    local target1 = epics.get(string.format("%s%sGripperPlace:Target1.VAL", args.P, args.R))
+    local target2 = epics.get(string.format("%s%sGripperPlace:Target2.VAL", args.P, args.R))
+    local target3 = epics.get(string.format("%s%sGripperPlace:Target3.VAL", args.P, args.R))
+    local target4 = epics.get(string.format("%s%sGripperPlace:Target4.VAL", args.P, args.R))
+    local target5 = epics.get(string.format("%s%sGripperPlace:Target5.VAL", args.P, args.R))
+    local target6 = epics.get(string.format("%s%sGripperPlace:Target6.VAL", args.P, args.R))
 
     local url = string.format("http://%s/action?action_name=gripper_place", args.host)
     local action_vars = {
         home = {home1, home2, home3, home4, home5, home6},
         target = {target1, target2, target3, target4, target5, target6},
-        joint_angle_locations = use_joint_space,
+        joint_angle_locations = (A == 1 and true or false),
     }
 
     local json_args = json.encode(action_vars)
@@ -123,20 +123,61 @@ function gripper_place_set_post_url(args)
 end
 
 function move_params_set_post_url(args)
-    local p1 = epics.get(string.format("%sUR:MoveParams:TCPOffset_X.VAL", args.P))
-    local p2 = epics.get(string.format("%sUR:MoveParams:TCPOffset_Y.VAL", args.P))
-    local p3 = epics.get(string.format("%sUR:MoveParams:TCPOffset_Z.VAL", args.P))
-    local p4 = epics.get(string.format("%sUR:MoveParams:TCPOffset_Roll.VAL", args.P))
-    local p5 = epics.get(string.format("%sUR:MoveParams:TCPOffset_Pitch.VAL", args.P))
-    local p6 = epics.get(string.format("%sUR:MoveParams:TCPOffset_Yaw.VAL", args.P))
-    local vel = epics.get(string.format("%sUR:MoveParams:Velocity.VAL", args.P))
-    local acc = epics.get(string.format("%sUR:MoveParams:Acceleration.VAL", args.P))
+    local p1 = epics.get(string.format("%s%sMoveParams:TCPOffset_X.VAL", args.P, args.R))
+    local p2 = epics.get(string.format("%s%sMoveParams:TCPOffset_Y.VAL", args.P, args.R))
+    local p3 = epics.get(string.format("%s%sMoveParams:TCPOffset_Z.VAL", args.P, args.R))
+    local p4 = epics.get(string.format("%s%sMoveParams:TCPOffset_Roll.VAL", args.P, args.R))
+    local p5 = epics.get(string.format("%s%sMoveParams:TCPOffset_Pitch.VAL", args.P, args.R))
+    local p6 = epics.get(string.format("%s%sMoveParams:TCPOffset_Yaw.VAL", args.P, args.R))
+    local vel = epics.get(string.format("%s%sMoveParams:Velocity.VAL", args.P, args.R))
+    local acc = epics.get(string.format("%s%sMoveParams:Acceleration.VAL", args.P, args.R))
 
     local url = string.format("http://%s/action?action_name=set_movement_params", args.host)
     local action_vars = {
         tcp_pose = {p1, p2, p3, p4, p5, p6},
         velocity = vel,
         acceleration = acc,
+    }
+
+    local json_args = json.encode(action_vars)
+    local encoded_args = urlencode(json_args)
+    full_url = url .. "&args=" .. encoded_args
+    print(full_url)
+
+    return string_to_table(full_url)
+end
+
+function pipette_dr_set_post_url(args)
+
+    local home1 = epics.get(string.format("%s%sPipetteDR:Home1.VAL", args.P, args.R))
+    local home2 = epics.get(string.format("%s%sPipetteDR:Home2.VAL", args.P, args.R))
+    local home3 = epics.get(string.format("%s%sPipetteDR:Home3.VAL", args.P, args.R))
+    local home4 = epics.get(string.format("%s%sPipetteDR:Home4.VAL", args.P, args.R))
+    local home5 = epics.get(string.format("%s%sPipetteDR:Home5.VAL", args.P, args.R))
+    local home6 = epics.get(string.format("%s%sPipetteDR:Home6.VAL", args.P, args.R))
+
+    local target1 = epics.get(string.format("%s%sPipetteDR:Target1.VAL", args.P, args.R))
+    local target2 = epics.get(string.format("%s%sPipetteDR:Target2.VAL", args.P, args.R))
+    local target3 = epics.get(string.format("%s%sPipetteDR:Target3.VAL", args.P, args.R))
+    local target4 = epics.get(string.format("%s%sPipetteDR:Target4.VAL", args.P, args.R))
+    local target5 = epics.get(string.format("%s%sPipetteDR:Target5.VAL", args.P, args.R))
+    local target6 = epics.get(string.format("%s%sPipetteDR:Target6.VAL", args.P, args.R))
+
+    local tiptrash1 = epics.get(string.format("%s%sPipetteDR:TipTrash1.VAL", args.P, args.R))
+    local tiptrash2 = epics.get(string.format("%s%sPipetteDR:TipTrash2.VAL", args.P, args.R))
+    local tiptrash3 = epics.get(string.format("%s%sPipetteDR:TipTrash3.VAL", args.P, args.R))
+    local tiptrash4 = epics.get(string.format("%s%sPipetteDR:TipTrash4.VAL", args.P, args.R))
+    local tiptrash5 = epics.get(string.format("%s%sPipetteDR:TipTrash5.VAL", args.P, args.R))
+    local tiptrash6 = epics.get(string.format("%s%sPipetteDR:TipTrash6.VAL", args.P, args.R))
+
+    local url = string.format("http://%s/action?action_name=pipette_dispense_and_retrieve", args.host)
+    local action_vars = {
+        home = {home1, home2, home3, home4, home5, home6},
+        target = {target1, target2, target3, target4, target5, target6},
+        volume = B,
+        tiptrash = {tiptrash1, tiptrash2, tiptrash3, tiptrash4, tiptrash5, tiptrash6},
+        use_joint_angles = (A == 1 and true or false)
+
     }
 
     local json_args = json.encode(action_vars)
