@@ -126,7 +126,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:ToggleGripper.VAL</string>
+     <string notr="true">$(P)$(R)ToggleGripper.VAL</string>
     </property>
     <property name="stackingMode" stdset="0">
      <enum>caChoice::Column</enum>
@@ -247,7 +247,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:ToggleGripper:Running</string>
+     <string notr="true">$(P)$(R)ToggleGripper:Running</string>
     </property>
     <property name="foreground">
      <color>
@@ -270,7 +270,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Home1.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Home1.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -293,7 +293,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Home2.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Home2.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -316,7 +316,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Home3.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Home3.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -339,7 +339,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Home4.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Home4.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -362,7 +362,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Home5.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Home5.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -385,7 +385,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Home6.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Home6.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -408,7 +408,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Source1.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Source1.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -431,7 +431,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Source3.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Source3.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -454,7 +454,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Source6.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Source6.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -477,7 +477,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Source5.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Source5.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -500,7 +500,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Source2.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Source2.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -523,7 +523,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Source4.VAL</string>
+     <string notr="true">$(P)$(R)GripperPick:Source4.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -572,7 +572,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPick:Run.PROC</string>
+     <string notr="true">$(P)$(R)GripperPick:Run.PROC</string>
     </property>
     <property name="label">
      <string notr="true">Run</string>
@@ -598,7 +598,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:CoordinateSpace.VAL</string>
+     <string notr="true">$(P)$(R)CoordinateSpace.VAL</string>
     </property>
     <property name="stackingMode" stdset="0">
      <enum>caChoice::Column</enum>
@@ -655,7 +655,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:TCPOffset_Z.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:TCPOffset_Z.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -678,7 +678,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:TCPOffset_X.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:TCPOffset_X.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -701,7 +701,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:TCPOffset_Yaw.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:TCPOffset_Yaw.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -740,7 +740,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:TCPOffset_Pitch.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:TCPOffset_Pitch.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -763,7 +763,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:TCPOffset_Y.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:TCPOffset_Y.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -786,7 +786,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:TCPOffset_Roll.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:TCPOffset_Roll.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -809,7 +809,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:Run.PROC</string>
+     <string notr="true">$(P)$(R)MoveParams:Run.PROC</string>
     </property>
     <property name="label">
      <string notr="true">Run</string>
@@ -835,7 +835,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:Velocity.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:Velocity.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -874,7 +874,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:MoveParams:Acceleration.VAL</string>
+     <string notr="true">$(P)$(R)MoveParams:Acceleration.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -913,7 +913,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Run.PROC</string>
+     <string notr="true">$(P)$(R)GripperPlace:Run.PROC</string>
     </property>
     <property name="label">
      <string notr="true">Run</string>
@@ -939,7 +939,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Home2.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Home2.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -962,7 +962,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Home4.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Home4.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -985,7 +985,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Home6.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Home6.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1008,7 +1008,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Target2.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Target2.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1031,7 +1031,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Target3.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Target3.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1054,7 +1054,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Target6.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Target6.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1077,7 +1077,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Home1.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Home1.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1100,7 +1100,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Target4.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Target4.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1136,7 +1136,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Home3.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Home3.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1178,7 +1178,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Home5.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Home5.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1201,7 +1201,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Target1.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Target1.VAL</string>
     </property>
     <property name="background">
      <color>
@@ -1224,7 +1224,7 @@ caMenu{
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">$(P)UR:GripperPlace:Target5.VAL</string>
+     <string notr="true">$(P)$(R)GripperPlace:Target5.VAL</string>
     </property>
     <property name="background">
      <color>

@@ -12,61 +12,61 @@
 # - -3.0925
 # - 0.0024
 
-record(ao, "$(P)UR:MoveParams:TCPOffset_X") {
+record(ao, "$(P)$(R)MoveParams:TCPOffset_X") {
     # field(VAL, 0.00256)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:TCPOffset_Y") {
+record(ao, "$(P)$(R)MoveParams:TCPOffset_Y") {
     # field(VAL, -0.00115)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:TCPOffset_Z") {
+record(ao, "$(P)$(R)MoveParams:TCPOffset_Z") {
     # field(VAL, 0.1506)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:TCPOffset_Roll") {
+record(ao, "$(P)$(R)MoveParams:TCPOffset_Roll") {
     # field(VAL, -0.0203)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:TCPOffset_Pitch") {
+record(ao, "$(P)$(R)MoveParams:TCPOffset_Pitch") {
     # field(VAL, -3.0925)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:TCPOffset_Yaw") {
+record(ao, "$(P)$(R)MoveParams:TCPOffset_Yaw") {
     # field(VAL, 0.0024)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:Velocity") {
+record(ao, "$(P)$(R)MoveParams:Velocity") {
     # field(VAL, 0.05)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:Acceleration") {
+record(ao, "$(P)$(R)MoveParams:Acceleration") {
     # field(VAL, 0.1)
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:GripperForce") {
+record(ao, "$(P)$(R)MoveParams:GripperForce") {
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:MoveParams:GripperSpeed") {
+record(ao, "$(P)$(R)MoveParams:GripperSpeed") {
     field(PREC, 6)
 }
 
-record(bo, "$(P)UR:MoveParams:Run") {
-    field(FLNK, "$(P)UR:MoveParams:set_post_url.PROC")
+record(bo, "$(P)$(R)MoveParams:Run") {
+    field(FLNK, "$(P)$(R)MoveParams:set_post_url.PROC")
 }
 
-record(luascript, "$(P)UR:MoveParams:set_post_url") {
+record(luascript, "$(P)$(R)MoveParams:set_post_url") {
     field(CODE, "@ur_module.lua move_params_set_post_url({P='$(P)',host='$(HOST)'})")
     field(SYNC, "Sync")
-    field(OUT, "$(P)$(R1)URL.VAL$ PP")
-    field(FLNK, "$(P)$(R1)Post.PROC")
+    field(OUT, "$(P)$(RQ1)URL.VAL$ PP")
+    field(FLNK, "$(P)$(RQ1)Post.PROC")
 }

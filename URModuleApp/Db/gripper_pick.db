@@ -29,70 +29,70 @@
 # 0.016039212070336314,
 # 0.0002724668869880679
 
-record(ao, "$(P)UR:GripperPick:Home1") {
+record(ao, "$(P)$(R)GripperPick:Home1") {
     field(VAL, "-1.585")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home2") {
+record(ao, "$(P)$(R)GripperPick:Home2") {
     field(VAL, "-1.305")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home3") {
+record(ao, "$(P)$(R)GripperPick:Home3") {
     field(VAL, "-1.805")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home4") {
+record(ao, "$(P)$(R)GripperPick:Home4") {
     field(VAL, "-1.579")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home5") {
+record(ao, "$(P)$(R)GripperPick:Home5") {
     field(VAL, "1.605")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Home6") {
+record(ao, "$(P)$(R)GripperPick:Home6") {
     field(VAL, "0.0")
     field(PREC, 6)
 }
 
-record(ao, "$(P)UR:GripperPick:Source1") {
+record(ao, "$(P)$(R)GripperPick:Source1") {
     field(VAL, "-0.1283")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source2") {
+record(ao, "$(P)$(R)GripperPick:Source2") {
     field(VAL, "-0.2391")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source3") {
+record(ao, "$(P)$(R)GripperPick:Source3") {
     field(VAL, "0.1531")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source4") {
+record(ao, "$(P)$(R)GripperPick:Source4") {
     field(VAL, "-0.019")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source5") {
+record(ao, "$(P)$(R)GripperPick:Source5") {
     field(VAL, "0.016")
     field(PREC, 6)
 }
-record(ao, "$(P)UR:GripperPick:Source6") {
+record(ao, "$(P)$(R)GripperPick:Source6") {
     field(VAL, "0.0")
     field(PREC, 6)
 }
 
-record(bo, "$(P)UR:CoordinateSpace") {
+record(bo, "$(P)$(R)CoordinateSpace") {
     field(VAL, 0)
     field(ZNAM, "Cartesian")
     field(ONAM, "Joint")
 }
 
-record(bo, "$(P)UR:GripperPick:Run") {
-    field(FLNK, "$(P)UR:GripperPick:set_post_url.PROC")
+record(bo, "$(P)$(R)GripperPick:Run") {
+    field(FLNK, "$(P)$(R)GripperPick:set_post_url.PROC")
 }
 
-record(luascript, "$(P)UR:GripperPick:set_post_url") {
-    field(INPA, "$(P)UR:CoordinateSpace.VAL")
+record(luascript, "$(P)$(R)GripperPick:set_post_url") {
+    field(INPA, "$(P)$(R)CoordinateSpace.VAL")
     field(CODE, "@ur_module.lua gripper_pick_set_post_url({P='$(P)',host='$(HOST)'})")
     field(SYNC, "Sync")
-    field(OUT, "$(P)$(R1)URL.VAL$ PP")
-    field(FLNK, "$(P)$(R1)Post.PROC")
+    field(OUT, "$(P)$(RQ1)URL.VAL$ PP")
+    field(FLNK, "$(P)$(RQ1)Post.PROC")
 }
