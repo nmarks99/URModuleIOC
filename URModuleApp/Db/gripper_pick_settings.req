@@ -1,0 +1,15 @@
+$(P)$(R)GripperPick:Home1.VAL
+$(P)$(R)GripperPick:Home2.VAL
+$(P)$(R)GripperPick:Home3.VAL
+$(P)$(R)GripperPick:Home4.VAL
+$(P)$(R)GripperPick:Home5.VAL
+$(P)$(R)GripperPick:Home6.VAL
+
+$(P)$(R)GripperPick:Source1.VAL
+$(P)$(R)GripperPick:Source2.VAL
+$(P)$(R)GripperPick:Source3.VAL
+$(P)$(R)GripperPick:Source4.VAL
+$(P)$(R)GripperPick:Source5.VAL
+$(P)$(R)GripperPick:Source6.VAL
+
+$(P)$(R)GripperPick:JointAngleLocations.VAL

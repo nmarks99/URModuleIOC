@@ -6,12 +6,16 @@ iocURModuleLinux_registerRecordDeviceDriver(pdbbase)
 
 epicsEnvSet("IOCSH_PS1", "$(IOC)>")
 epicsEnvSet("PREFIX", "URModule:")
+epicsEnvSet("LUA_SCRIPT_PATH", "lua/")
+
+< autosave.iocsh
 
 # Instantiate HTTP client and load some requests
 AsynHttpClientConfig("client1")
 dbLoadTemplate("requests.substitutions", "P=$(PREFIX),PORT=client1")
 
-epicsEnvSet("LUA_SCRIPT_PATH", "lua/")
+# Load database for each REST node action
+# NOTE: only toggle_gripper uses its RQ2 request at the moment
 dbLoadRecords("$(TOP)/db/set_movement_params.db", "P=$(PREFIX),R=UR3:,RQ1=Req1:,RQ2=Req2:,HOST=localhost:3030")
 dbLoadRecords("$(TOP)/db/toggle_gripper.db", "P=$(PREFIX),R=UR3:,RQ1=Req3:,RQ2=Req4:,HOST=localhost:3030")
 dbLoadRecords("$(TOP)/db/gripper_pick.db", "P=$(PREFIX),R=UR3:,RQ1=Req5:,RQ2=Req6:,HOST=localhost:3030")

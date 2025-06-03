@@ -44,6 +44,16 @@ ifdef ASYN_HTTP_CLIENT
   $(PROD_NAME)_LIBS := asynHttpClient $($(PROD_NAME)_LIBS)
 endif
 
+ifdef AUTOSAVE
+  $(DBD_NAME)_DBD += asSupport.dbd
+  $(PROD_NAME)_LIBS := autosave $($(PROD_NAME)_LIBS)
+endif
+
+ifdef STD
+  $(DBD_NAME)_DBD += stdSupport.dbd
+  $(PROD_NAME)_LIBS := std $($(PROD_NAME)_LIBS)
+endif
+
 $(PROD_NAME)_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 # <name>_registerRecordDeviceDriver.cpp will be created from <name>.dbd
