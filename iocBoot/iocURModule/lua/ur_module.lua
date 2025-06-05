@@ -333,3 +333,11 @@ function pipette_transfer_set_post_url(args)
 
     return string_to_table(full_url)
 end
+
+function estop_set_post_url(args)
+    local url = string.format("http://%s/action?action_name=e_stop", args.host)
+    if DEBUG then
+        print(url)
+    end
+    return string_to_table(url)
+end

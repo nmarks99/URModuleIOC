@@ -17,7 +17,7 @@
 
 # PARSE
 # Key to lookup in JSON response
-# Only relevate when FORMAT=1 (JSON)
+# Only relevant when FORMAT=1 (JSON)
 
 file "$(ASYN_HTTP_CLIENT)/db/http_request.db"
 {
@@ -43,4 +43,6 @@ pattern
 
 {"Req13:"    12,       2,       1, "action_id"}
 {"Req14:"    13,       0,       1, "status"}
+
+{"Req15:"    14,       2,       1, ""}
 }
