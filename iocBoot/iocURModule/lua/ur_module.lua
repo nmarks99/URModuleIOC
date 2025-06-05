@@ -6,6 +6,8 @@
 epics = require("epics")
 json = require("lunajson")
 
+DEBUG = true
+
 local function urlencode(str)
     return (str:gsub("[^%w%-._~]", function(c)
         return string.format("%%%02X", string.byte(c))
@@ -45,6 +47,11 @@ function toggle_gripper_set_post_url(args)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
 
+    if DEBUG then
+        print(json_args)
+        print(full_url)
+    end
+
     return string_to_table(full_url)
 end
 
@@ -57,8 +64,6 @@ function toggle_gripper_set_get_url(args)
 end
 
 function gripper_pick_set_post_url(args)
-    -- local cspace = epics.get(string.format("%s%sCoordinateSpace.VAL", args.P, args.R))
-    -- local use_joint_space = cspace == 1 and true or false
 
     local home1 = epics.get(string.format("%s%sGripperPick:Home1.VAL", args.P, args.R))
     local home2 = epics.get(string.format("%s%sGripperPick:Home2.VAL", args.P, args.R))
@@ -85,12 +90,15 @@ function gripper_pick_set_post_url(args)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
 
+    if DEBUG then
+        print(json_args)
+        print(full_url)
+    end
+
     return string_to_table(full_url)
 end
 
 function gripper_place_set_post_url(args)
-    -- local cspace = epics.get(string.format("%s%sCoordinateSpace.VAL", args.P, args.R))
-    -- local use_joint_space = cspace == 1 and true or false
 
     local home1 = epics.get(string.format("%s%sGripperPlace:Home1.VAL", args.P, args.R))
     local home2 = epics.get(string.format("%s%sGripperPlace:Home2.VAL", args.P, args.R))
@@ -117,6 +125,11 @@ function gripper_place_set_post_url(args)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
 
+    if DEBUG then
+        print(json_args)
+        print(full_url)
+    end
+
     return string_to_table(full_url)
 end
 
@@ -140,7 +153,11 @@ function move_params_set_post_url(args)
     local json_args = json.encode(action_vars)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
-    print(full_url)
+
+    if DEBUG then
+        print(json_args)
+        print(full_url)
+    end
 
     return string_to_table(full_url)
 end
@@ -188,7 +205,11 @@ function pipette_dr_set_post_url(args)
     local json_args = json.encode(action_vars)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
-    print(full_url)
+
+    if DEBUG then
+        print(json_args)
+        print(full_url)
+    end
 
     return string_to_table(full_url)
 end
@@ -244,18 +265,15 @@ function pipette_pms_set_post_url(args)
     local json_args = json.encode(action_vars)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
-    print(full_url)
+
+    if DEBUG then
+        print(json_args)
+        print(full_url)
+    end
 
     return string_to_table(full_url)
 end
 
--- # home: Annotated[Union[LocationArgument, list], "Home location"],
--- # source: Annotated[Union[LocationArgument, list], "Initial location of the sample"],
--- # target: Annotated[Union[LocationArgument, list], "Target location of the sample"],
--- # tip_loc: Annotated[Union[LocationArgument, list], "New tip location"],
--- # tip_trash: Annotated[Union[LocationArgument, list], "Tip trash location"],
--- # volume: Annotated[float, "Set a volume in micro liters"],
--- # joint_angle_locations: Annotated[bool, "Use joint angles for all the locations"] = True,
 function pipette_transfer_set_post_url(args)
 
     local home1 = epics.get(string.format("%s%sPipetteTransfer:Home1.VAL", args.P, args.R))
@@ -307,7 +325,11 @@ function pipette_transfer_set_post_url(args)
     local json_args = json.encode(action_vars)
     local encoded_args = urlencode(json_args)
     full_url = url .. "&args=" .. encoded_args
-    print(full_url)
+
+    if DEBUG then
+        print(json_args)
+        print(full_url)
+    end
 
     return string_to_table(full_url)
 end

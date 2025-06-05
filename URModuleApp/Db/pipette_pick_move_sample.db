@@ -1,10 +1,3 @@
-# home: Annotated[Union[LocationArgument, list], "Home location in joint angles"],
-# sample_loc: Annotated[Union[LocationArgument, list], "Sample location"],
-# target: Annotated[Union[LocationArgument, list], "Location of the object"],
-# volume: Annotated[int, "Set a volume in micro liters"] = 10,
-# tip_loc: Annotated[Union[LocationArgument, list], "Tip location"] = None,
-# joint_angle_locations: Annotated[bool, "Use joint angles for all the locations"] = True,
-
 record(ao, "$(P)$(R)PipettePMS:Home1") {
     field(EGU, "rad")
     field(PREC, 6)

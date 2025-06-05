@@ -5,5 +5,6 @@ $(P)$(R)MoveParams:TCPOffset_Roll.VAL
 $(P)$(R)MoveParams:TCPOffset_Pitch.VAL
 $(P)$(R)MoveParams:TCPOffset_Yaw.VAL
 $(P)$(R)MoveParams:Velocity.VAL
+$(P)$(R)MoveParams:Acceleration.VAL
 $(P)$(R)MoveParams:GripperSpeed.VAL
 $(P)$(R)MoveParams:GripperForce.VAL

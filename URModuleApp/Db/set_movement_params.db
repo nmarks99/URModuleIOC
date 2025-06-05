@@ -61,7 +61,7 @@ record(luascript, "$(P)$(R)MoveParams:set_post_url") {
     field(INPB, "$(P)$(R)MoveParams:Acceleration.VAL")
     field(INPC, "$(P)$(R)MoveParams:GripperSpeed.VAL")
     field(INPD, "$(P)$(R)MoveParams:GripperForce.VAL")
-    field(CODE, "@ur_module.lua move_params_set_post_url({P='$(P)',host='$(HOST)'})")
+    field(CODE, "@ur_module.lua move_params_set_post_url({P='$(P)',R='$(R)',host='$(HOST)'})")
     field(SYNC, "Sync")
     field(OUT, "$(P)$(RQ1)URL.VAL$ PP")
     field(FLNK, "$(P)$(RQ1)Post.PROC")

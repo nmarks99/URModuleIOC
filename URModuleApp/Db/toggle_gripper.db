@@ -20,7 +20,7 @@ record(fanout, "$(P)$(R)run_toggle_gripper") {
 
 record(luascript, "$(P)$(R)ToggleGripper:set_post_url") {
     field(INPA, "$(P)$(R)ToggleGripper.VAL")
-    field(CODE, "@ur_module.lua toggle_gripper_set_post_url({prefix='$(P)',host='$(HOST)'})")
+    field(CODE, "@ur_module.lua toggle_gripper_set_post_url({host='$(HOST)'})")
     field(SYNC, "Sync")
     field(OUT, "$(P)$(RQ1)URL.VAL$ PP")
     field(FLNK, "$(P)$(RQ1)Post.PROC")
