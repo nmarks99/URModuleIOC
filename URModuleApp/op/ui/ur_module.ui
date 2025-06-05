@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>619</width>
-    <height>800</height>
+    <width>647</width>
+    <height>871</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -205,8 +205,8 @@ caMenu{
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>50</y>
+      <x>40</x>
+      <y>45</y>
       <width>166</width>
       <height>19</height>
      </rect>
@@ -224,8 +224,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_13">
     <property name="geometry">
      <rect>
-      <x>265</x>
-      <y>80</y>
+      <x>280</x>
+      <y>75</y>
       <width>76</width>
       <height>20</height>
      </rect>
@@ -247,8 +247,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_14">
     <property name="geometry">
      <rect>
-      <x>105</x>
-      <y>80</y>
+      <x>120</x>
+      <y>75</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -270,8 +270,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_15">
     <property name="geometry">
      <rect>
-      <x>505</x>
-      <y>80</y>
+      <x>520</x>
+      <y>75</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -293,8 +293,8 @@ caMenu{
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>80</y>
+      <x>25</x>
+      <y>75</y>
       <width>91</width>
       <height>19</height>
      </rect>
@@ -309,8 +309,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_16">
     <property name="geometry">
      <rect>
-      <x>425</x>
-      <y>80</y>
+      <x>440</x>
+      <y>75</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -332,8 +332,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_17">
     <property name="geometry">
      <rect>
-      <x>185</x>
-      <y>80</y>
+      <x>200</x>
+      <y>75</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -355,8 +355,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_18">
     <property name="geometry">
      <rect>
-      <x>345</x>
-      <y>80</y>
+      <x>360</x>
+      <y>75</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -378,8 +378,8 @@ caMenu{
    <widget class="caMessageButton" name="camessagebutton_2">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>55</y>
+      <x>555</x>
+      <y>50</y>
       <width>40</width>
       <height>20</height>
      </rect>
@@ -404,8 +404,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_19">
     <property name="geometry">
      <rect>
-      <x>105</x>
-      <y>105</y>
+      <x>120</x>
+      <y>100</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -427,8 +427,8 @@ caMenu{
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>105</y>
+      <x>25</x>
+      <y>100</y>
       <width>91</width>
       <height>19</height>
      </rect>
@@ -443,8 +443,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_20">
     <property name="geometry">
      <rect>
-      <x>105</x>
-      <y>130</y>
+      <x>120</x>
+      <y>125</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -466,8 +466,8 @@ caMenu{
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>130</y>
+      <x>25</x>
+      <y>125</y>
       <width>91</width>
       <height>19</height>
      </rect>
@@ -482,8 +482,8 @@ caMenu{
    <widget class="caChoice" name="cachoice_4">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>315</y>
+      <x>75</x>
+      <y>375</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -501,8 +501,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_45">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>215</y>
+      <x>360</x>
+      <y>250</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -524,8 +524,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_46">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>240</y>
+      <x>520</x>
+      <y>275</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -547,8 +547,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_47">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>215</y>
+      <x>280</x>
+      <y>250</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -570,8 +570,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_48">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>215</y>
+      <x>520</x>
+      <y>250</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -593,8 +593,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_49">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>240</y>
+      <x>440</x>
+      <y>275</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -616,8 +616,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_50">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>215</y>
+      <x>120</x>
+      <y>250</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -639,8 +639,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_51">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>240</y>
+      <x>200</x>
+      <y>275</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -662,8 +662,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_52">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>240</y>
+      <x>120</x>
+      <y>275</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -685,8 +685,8 @@ caMenu{
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>185</y>
+      <x>40</x>
+      <y>220</y>
       <width>236</width>
       <height>19</height>
      </rect>
@@ -704,8 +704,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_53">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>240</y>
+      <x>280</x>
+      <y>275</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -727,8 +727,8 @@ caMenu{
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>215</y>
+      <x>40</x>
+      <y>250</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -743,8 +743,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_54">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>215</y>
+      <x>200</x>
+      <y>250</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -766,8 +766,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_55">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>240</y>
+      <x>360</x>
+      <y>275</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -789,8 +789,8 @@ caMenu{
    <widget class="caMessageButton" name="camessagebutton_5">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>190</y>
+      <x>555</x>
+      <y>225</y>
       <width>40</width>
       <height>20</height>
      </rect>
@@ -815,8 +815,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_56">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>215</y>
+      <x>440</x>
+      <y>250</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -838,8 +838,8 @@ caMenu{
    <widget class="QLabel" name="label_17">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>240</y>
+      <x>40</x>
+      <y>275</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -854,8 +854,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_63">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>265</y>
+      <x>520</x>
+      <y>300</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -877,8 +877,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_64">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>265</y>
+      <x>360</x>
+      <y>300</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -900,8 +900,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_65">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>265</y>
+      <x>440</x>
+      <y>300</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -923,8 +923,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_66">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>265</y>
+      <x>200</x>
+      <y>300</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -946,8 +946,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_67">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>265</y>
+      <x>280</x>
+      <y>300</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -969,14 +969,14 @@ caMenu{
    <widget class="QLabel" name="label_19">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>265</y>
+      <x>40</x>
+      <y>300</y>
       <width>75</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
-     <string>Tip Trash:</string>
+     <string>Tip trash:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -985,8 +985,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_68">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>265</y>
+      <x>120</x>
+      <y>300</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1008,8 +1008,8 @@ caMenu{
    <widget class="QLabel" name="label_20">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>290</y>
+      <x>40</x>
+      <y>350</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -1024,8 +1024,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_69">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>290</y>
+      <x>120</x>
+      <y>350</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1047,8 +1047,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_2">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>215</y>
+      <x>600</x>
+      <y>250</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -1077,8 +1077,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_3">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>240</y>
+      <x>600</x>
+      <y>275</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -1107,8 +1107,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_4">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>265</y>
+      <x>600</x>
+      <y>300</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -1137,8 +1137,8 @@ caMenu{
    <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>375</y>
+      <x>40</x>
+      <y>430</y>
       <width>236</width>
       <height>19</height>
      </rect>
@@ -1156,8 +1156,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_57">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>430</y>
+      <x>520</x>
+      <y>485</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1179,8 +1179,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_58">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>405</y>
+      <x>120</x>
+      <y>460</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1202,8 +1202,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_59">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>405</y>
+      <x>280</x>
+      <y>460</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1225,8 +1225,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_60">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>430</y>
+      <x>280</x>
+      <y>485</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1248,8 +1248,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_61">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>430</y>
+      <x>440</x>
+      <y>485</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1271,8 +1271,8 @@ caMenu{
    <widget class="caChoice" name="cachoice_5">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>530</y>
+      <x>75</x>
+      <y>610</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -1290,8 +1290,8 @@ caMenu{
    <widget class="QLabel" name="label_21">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>405</y>
+      <x>40</x>
+      <y>460</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -1306,8 +1306,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_70">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>505</y>
+      <x>120</x>
+      <y>585</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1329,8 +1329,8 @@ caMenu{
    <widget class="caMessageButton" name="camessagebutton_6">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>380</y>
+      <x>555</x>
+      <y>435</y>
       <width>40</width>
       <height>20</height>
      </rect>
@@ -1355,8 +1355,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_62">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>405</y>
+      <x>520</x>
+      <y>460</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1378,8 +1378,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_71">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>430</y>
+      <x>120</x>
+      <y>485</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1401,8 +1401,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_5">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>430</y>
+      <x>600</x>
+      <y>485</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -1431,8 +1431,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_72">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>405</y>
+      <x>360</x>
+      <y>460</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1454,8 +1454,8 @@ caMenu{
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>430</y>
+      <x>40</x>
+      <y>485</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -1470,8 +1470,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_6">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>405</y>
+      <x>600</x>
+      <y>460</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -1500,8 +1500,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_73">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>430</y>
+      <x>360</x>
+      <y>485</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1523,8 +1523,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_74">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>405</y>
+      <x>200</x>
+      <y>460</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1546,8 +1546,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_75">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>405</y>
+      <x>440</x>
+      <y>460</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1569,8 +1569,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_76">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>430</y>
+      <x>200</x>
+      <y>485</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1592,8 +1592,8 @@ caMenu{
    <widget class="QLabel" name="label_23">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>505</y>
+      <x>40</x>
+      <y>585</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -1608,8 +1608,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_7">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>290</y>
+      <x>200</x>
+      <y>350</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -1638,8 +1638,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_77">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>455</y>
+      <x>360</x>
+      <y>510</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1661,8 +1661,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_78">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>455</y>
+      <x>120</x>
+      <y>510</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1684,8 +1684,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_79">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>455</y>
+      <x>280</x>
+      <y>510</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1707,8 +1707,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_80">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>455</y>
+      <x>520</x>
+      <y>510</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1730,8 +1730,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_81">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>455</y>
+      <x>200</x>
+      <y>510</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1753,8 +1753,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_82">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>455</y>
+      <x>440</x>
+      <y>510</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1776,8 +1776,8 @@ caMenu{
    <widget class="QLabel" name="label_24">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>455</y>
+      <x>40</x>
+      <y>510</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -1792,8 +1792,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_8">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>455</y>
+      <x>600</x>
+      <y>510</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -1822,8 +1822,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_83">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>480</y>
+      <x>280</x>
+      <y>535</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1845,8 +1845,8 @@ caMenu{
    <widget class="QLabel" name="label_25">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>480</y>
+      <x>40</x>
+      <y>535</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -1861,8 +1861,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_84">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>480</y>
+      <x>360</x>
+      <y>535</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1884,8 +1884,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_85">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>480</y>
+      <x>440</x>
+      <y>535</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1907,8 +1907,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_86">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>480</y>
+      <x>200</x>
+      <y>535</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1930,8 +1930,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_87">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>480</y>
+      <x>520</x>
+      <y>535</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1953,8 +1953,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_88">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>480</y>
+      <x>120</x>
+      <y>535</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -1976,8 +1976,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_9">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>480</y>
+      <x>600</x>
+      <y>535</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2006,8 +2006,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_10">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>505</y>
+      <x>200</x>
+      <y>585</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2036,8 +2036,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_89">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>680</y>
+      <x>280</x>
+      <y>765</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2059,8 +2059,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_90">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>655</y>
+      <x>280</x>
+      <y>740</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2082,8 +2082,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_91">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>630</y>
+      <x>120</x>
+      <y>715</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2105,8 +2105,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_92">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>680</y>
+      <x>200</x>
+      <y>765</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2128,14 +2128,14 @@ caMenu{
    <widget class="QLabel" name="label_26">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>705</y>
+      <x>40</x>
+      <y>790</y>
       <width>75</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
-     <string>Tip Trash:</string>
+     <string>Tip trash:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2144,8 +2144,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_93">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>630</y>
+      <x>440</x>
+      <y>715</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2167,8 +2167,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_94">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>680</y>
+      <x>120</x>
+      <y>765</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2190,8 +2190,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_95">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>605</y>
+      <x>520</x>
+      <y>690</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2213,8 +2213,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_96">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>655</y>
+      <x>440</x>
+      <y>740</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2236,8 +2236,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_11">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>680</y>
+      <x>600</x>
+      <y>765</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2266,8 +2266,8 @@ caMenu{
    <widget class="QLabel" name="label_27">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>730</y>
+      <x>40</x>
+      <y>815</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -2282,8 +2282,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_97">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>655</y>
+      <x>120</x>
+      <y>740</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2305,8 +2305,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_98">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>680</y>
+      <x>360</x>
+      <y>765</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2328,8 +2328,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_99">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>705</y>
+      <x>200</x>
+      <y>790</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2351,8 +2351,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_100">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>630</y>
+      <x>360</x>
+      <y>715</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2374,8 +2374,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_101">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>705</y>
+      <x>360</x>
+      <y>790</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2397,8 +2397,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_102">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>605</y>
+      <x>280</x>
+      <y>690</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2420,8 +2420,8 @@ caMenu{
    <widget class="QLabel" name="label_28">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>680</y>
+      <x>40</x>
+      <y>765</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -2436,8 +2436,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_103">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>655</y>
+      <x>360</x>
+      <y>740</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2459,8 +2459,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_104">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>630</y>
+      <x>200</x>
+      <y>715</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2482,8 +2482,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_12">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>705</y>
+      <x>600</x>
+      <y>790</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2512,8 +2512,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_105">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>680</y>
+      <x>440</x>
+      <y>765</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2535,8 +2535,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_106">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>705</y>
+      <x>440</x>
+      <y>790</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2558,8 +2558,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_107">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>705</y>
+      <x>520</x>
+      <y>790</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2581,8 +2581,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_108">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>655</y>
+      <x>200</x>
+      <y>740</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2604,8 +2604,8 @@ caMenu{
    <widget class="QLabel" name="label_29">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>605</y>
+      <x>40</x>
+      <y>690</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -2620,8 +2620,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_109">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>705</y>
+      <x>280</x>
+      <y>790</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2643,8 +2643,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_110">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>655</y>
+      <x>520</x>
+      <y>740</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2666,8 +2666,8 @@ caMenu{
    <widget class="QLabel" name="label_30">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>655</y>
+      <x>40</x>
+      <y>740</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -2682,8 +2682,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_111">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>605</y>
+      <x>200</x>
+      <y>690</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2705,8 +2705,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_112">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>605</y>
+      <x>440</x>
+      <y>690</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2728,8 +2728,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_13">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>605</y>
+      <x>600</x>
+      <y>690</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2758,8 +2758,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_113">
     <property name="geometry">
      <rect>
-      <x>325</x>
-      <y>605</y>
+      <x>360</x>
+      <y>690</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2781,8 +2781,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_114">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>705</y>
+      <x>120</x>
+      <y>790</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2804,8 +2804,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_14">
     <property name="geometry">
      <rect>
-      <x>165</x>
-      <y>730</y>
+      <x>200</x>
+      <y>815</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2834,8 +2834,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_15">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>655</y>
+      <x>600</x>
+      <y>740</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2864,8 +2864,8 @@ caMenu{
    <widget class="caLineEdit" name="calineedit_16">
     <property name="geometry">
      <rect>
-      <x>565</x>
-      <y>630</y>
+      <x>600</x>
+      <y>715</y>
       <width>36</width>
       <height>20</height>
      </rect>
@@ -2894,8 +2894,8 @@ caMenu{
    <widget class="QLabel" name="label_31">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>630</y>
+      <x>40</x>
+      <y>715</y>
       <width>75</width>
       <height>19</height>
      </rect>
@@ -2910,8 +2910,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_115">
     <property name="geometry">
      <rect>
-      <x>245</x>
-      <y>630</y>
+      <x>280</x>
+      <y>715</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2933,8 +2933,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_116">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>680</y>
+      <x>520</x>
+      <y>765</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2956,8 +2956,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_117">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>730</y>
+      <x>120</x>
+      <y>815</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -2979,8 +2979,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_118">
     <property name="geometry">
      <rect>
-      <x>485</x>
-      <y>630</y>
+      <x>520</x>
+      <y>715</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -3002,8 +3002,8 @@ caMenu{
    <widget class="caTextEntry" name="catextentry_119">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>605</y>
+      <x>120</x>
+      <y>690</y>
       <width>75</width>
       <height>20</height>
      </rect>
@@ -3025,8 +3025,8 @@ caMenu{
    <widget class="caChoice" name="cachoice_6">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>755</y>
+      <x>75</x>
+      <y>840</y>
       <width>121</width>
       <height>20</height>
      </rect>
@@ -3044,8 +3044,8 @@ caMenu{
    <widget class="QLabel" name="label_32">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>580</y>
+      <x>40</x>
+      <y>665</y>
       <width>236</width>
       <height>19</height>
      </rect>
@@ -3063,8 +3063,8 @@ caMenu{
    <widget class="caMessageButton" name="camessagebutton_7">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>580</y>
+      <x>555</x>
+      <y>665</y>
       <width>40</width>
       <height>20</height>
      </rect>
@@ -3084,6 +3084,468 @@ caMenu{
     </property>
     <property name="releaseMessage">
      <string notr="true">1</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_120">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>325</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteDR:SafeWP6.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_121">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>325</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteDR:SafeWP1.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_122">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>325</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteDR:SafeWP2.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>325</y>
+      <width>106</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Safe waypoint:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_123">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>325</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteDR:SafeWP5.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_124">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>325</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteDR:SafeWP3.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_125">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>325</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteDR:SafeWP4.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_17">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>325</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipetteDR:LocationUnits</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_126">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>560</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipettePMS:SafeWP6.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_127">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>560</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipettePMS:SafeWP2.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>560</y>
+      <width>106</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Safe waypoint:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_128">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>560</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipettePMS:SafeWP5.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_129">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>560</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipettePMS:SafeWP1.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_130">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>560</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipettePMS:SafeWP3.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_131">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>560</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipettePMS:SafeWP4.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_18">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>560</y>
+      <width>36</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)PipettePMS:LocationUnits</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color>
+      <red>218</red>
+      <green>218</green>
+      <blue>218</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>175</y>
+      <width>96</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gripper force:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_21">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>175</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)MoveParams:GripperForce.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>96</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gripper speed:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_22">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>150</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">$(P)$(R)MoveParams:GripperSpeed.VAL</string>
+    </property>
+    <property name="background">
+     <color>
+      <red>115</red>
+      <green>223</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>75</y>
+      <width>41</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>m,rad</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
   </widget>

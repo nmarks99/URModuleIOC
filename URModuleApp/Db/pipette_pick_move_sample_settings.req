@@ -12,12 +12,27 @@ $(P)$(R)PipettePMS:Target4.VAL
 $(P)$(R)PipettePMS:Target5.VAL
 $(P)$(R)PipettePMS:Target6.VAL
 
-$(P)$(R)PipettePMS:TipTrash1.VAL
-$(P)$(R)PipettePMS:TipTrash2.VAL
-$(P)$(R)PipettePMS:TipTrash3.VAL
-$(P)$(R)PipettePMS:TipTrash4.VAL
-$(P)$(R)PipettePMS:TipTrash5.VAL
-$(P)$(R)PipettePMS:TipTrash6.VAL
+$(P)$(R)PipettePMS:Sample1.VAL
+$(P)$(R)PipettePMS:Sample2.VAL
+$(P)$(R)PipettePMS:Sample3.VAL
+$(P)$(R)PipettePMS:Sample4.VAL
+$(P)$(R)PipettePMS:Sample5.VAL
+$(P)$(R)PipettePMS:Sample6.VAL
+
+$(P)$(R)PipettePMS:Tip1.VAL
+$(P)$(R)PipettePMS:Tip2.VAL
+$(P)$(R)PipettePMS:Tip3.VAL
+$(P)$(R)PipettePMS:Tip4.VAL
+$(P)$(R)PipettePMS:Tip5.VAL
+$(P)$(R)PipettePMS:Tip6.VAL
+
+$(P)$(R)PipettePMS:SafeWP1.VAL
+$(P)$(R)PipettePMS:SafeWP2.VAL
+$(P)$(R)PipettePMS:SafeWP3.VAL
+$(P)$(R)PipettePMS:SafeWP4.VAL
+$(P)$(R)PipettePMS:SafeWP5.VAL
+$(P)$(R)PipettePMS:SafeWP6.VAL
 
 $(P)$(R)PipettePMS:Volume.VAL
+
 $(P)$(R)PipettePMS:JointAngleLocations.VAL

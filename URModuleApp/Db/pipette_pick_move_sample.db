@@ -87,6 +87,25 @@ record(ao, "$(P)$(R)PipettePMS:Tip6") {
     field(PREC, 6)
 }
 
+record(ao, "$(P)$(R)PipettePMS:SafeWP1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipettePMS:SafeWP2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipettePMS:SafeWP3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipettePMS:SafeWP4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipettePMS:SafeWP5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipettePMS:SafeWP6") {
+    field(PREC, 6)
+}
+
 record(ao, "$(P)$(R)PipettePMS:Volume") {
     field(EGU, "uL")
     field(PREC, 3)

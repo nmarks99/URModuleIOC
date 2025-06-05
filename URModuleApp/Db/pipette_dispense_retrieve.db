@@ -67,6 +67,25 @@ record(ao, "$(P)$(R)PipetteDR:TipTrash6") {
     field(PREC, 6)
 }
 
+record(ao, "$(P)$(R)PipetteDR:SafeWP1") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:SafeWP2") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:SafeWP3") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:SafeWP4") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:SafeWP5") {
+    field(PREC, 6)
+}
+record(ao, "$(P)$(R)PipetteDR:SafeWP6") {
+    field(PREC, 6)
+}
+
 record(ao, "$(P)$(R)PipetteDR:Volume") {
     field(EGU, "uL")
     field(PREC, 3)

@@ -168,12 +168,20 @@ function pipette_dr_set_post_url(args)
     local tiptrash5 = epics.get(string.format("%s%sPipetteDR:TipTrash5.VAL", args.P, args.R))
     local tiptrash6 = epics.get(string.format("%s%sPipetteDR:TipTrash6.VAL", args.P, args.R))
 
+    local safewp1 = epics.get(string.format("%s%sPipetteDR:SafeWP1.VAL", args.P, args.R))
+    local safewp2 = epics.get(string.format("%s%sPipetteDR:SafeWP2.VAL", args.P, args.R))
+    local safewp3 = epics.get(string.format("%s%sPipetteDR:SafeWP3.VAL", args.P, args.R))
+    local safewp4 = epics.get(string.format("%s%sPipetteDR:SafeWP4.VAL", args.P, args.R))
+    local safewp5 = epics.get(string.format("%s%sPipetteDR:SafeWP5.VAL", args.P, args.R))
+    local safewp6 = epics.get(string.format("%s%sPipetteDR:SafeWP6.VAL", args.P, args.R))
+
     local url = string.format("http://%s/action?action_name=pipette_dispense_and_retrieve", args.host)
     local action_vars = {
         home = {home1, home2, home3, home4, home5, home6},
         target = {target1, target2, target3, target4, target5, target6},
         volume = B,
         tip_trash = {tiptrash1, tiptrash2, tiptrash3, tiptrash4, tiptrash5, tiptrash6},
+        safe_waypoint = {safewp1, safewp2, safewp3, safewp4, safewp5, safewp6},
         joint_angle_locations = (A == 1 and true or false)
     }
 
@@ -215,6 +223,13 @@ function pipette_pms_set_post_url(args)
     local tip5 = epics.get(string.format("%s%sPipettePMS:Tip5.VAL", args.P, args.R))
     local tip6 = epics.get(string.format("%s%sPipettePMS:Tip6.VAL", args.P, args.R))
 
+    local safewp1 = epics.get(string.format("%s%sPipettePMS:SafeWP1.VAL", args.P, args.R))
+    local safewp2 = epics.get(string.format("%s%sPipettePMS:SafeWP2.VAL", args.P, args.R))
+    local safewp3 = epics.get(string.format("%s%sPipettePMS:SafeWP3.VAL", args.P, args.R))
+    local safewp4 = epics.get(string.format("%s%sPipettePMS:SafeWP4.VAL", args.P, args.R))
+    local safewp5 = epics.get(string.format("%s%sPipettePMS:SafeWP5.VAL", args.P, args.R))
+    local safewp6 = epics.get(string.format("%s%sPipettePMS:SafeWP6.VAL", args.P, args.R))
+
     local url = string.format("http://%s/action?action_name=pipette_pick_and_move_sample", args.host)
     local action_vars = {
         home = {home1, home2, home3, home4, home5, home6},
@@ -222,8 +237,8 @@ function pipette_pms_set_post_url(args)
         target = {target1, target2, target3, target4, target5, target6},
         volume = B,
         tip_loc = {tip1, tip2, tip3, tip4, tip5, tip6},
+        safe_waypoint = {safewp1, safewp2, safewp3, safewp4, safewp5, safewp6},
         joint_angle_locations = (A == 1 and true or false)
-
     }
 
     local json_args = json.encode(action_vars)
@@ -249,7 +264,7 @@ function pipette_transfer_set_post_url(args)
     local home4 = epics.get(string.format("%s%sPipetteTransfer:Home4.VAL", args.P, args.R))
     local home5 = epics.get(string.format("%s%sPipetteTransfer:Home5.VAL", args.P, args.R))
     local home6 = epics.get(string.format("%s%sPipetteTransfer:Home6.VAL", args.P, args.R))
-    
+
     local source1 = epics.get(string.format("%s%sPipetteTransfer:Source1.VAL", args.P, args.R))
     local source2 = epics.get(string.format("%s%sPipetteTransfer:Source2.VAL", args.P, args.R))
     local source3 = epics.get(string.format("%s%sPipetteTransfer:Source3.VAL", args.P, args.R))
@@ -277,7 +292,7 @@ function pipette_transfer_set_post_url(args)
     local tiptrash4 = epics.get(string.format("%s%sPipetteTransfer:TipTrash4.VAL", args.P, args.R))
     local tiptrash5 = epics.get(string.format("%s%sPipetteTransfer:TipTrash5.VAL", args.P, args.R))
     local tiptrash6 = epics.get(string.format("%s%sPipetteTransfer:TipTrash6.VAL", args.P, args.R))
-    
+
     local url = string.format("http://%s/action?action_name=pipette_transfer", args.host)
     local action_vars = {
         home = {home1, home2, home3, home4, home5, home6},

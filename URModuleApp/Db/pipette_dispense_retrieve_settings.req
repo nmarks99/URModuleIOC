@@ -19,5 +19,13 @@ $(P)$(R)PipetteDR:TipTrash4.VAL
 $(P)$(R)PipetteDR:TipTrash5.VAL
 $(P)$(R)PipetteDR:TipTrash6.VAL
 
+$(P)$(R)PipetteDR:SafeWP1.VAL
+$(P)$(R)PipetteDR:SafeWP2.VAL
+$(P)$(R)PipetteDR:SafeWP3.VAL
+$(P)$(R)PipetteDR:SafeWP4.VAL
+$(P)$(R)PipetteDR:SafeWP5.VAL
+$(P)$(R)PipetteDR:SafeWP6.VAL
+
 $(P)$(R)PipetteDR:Volume.VAL
+
 $(P)$(R)PipetteDR:JointAngleLocations.VAL
