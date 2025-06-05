@@ -127,14 +127,14 @@ function move_params_set_post_url(args)
     local p4 = epics.get(string.format("%s%sMoveParams:TCPOffset_Roll.VAL", args.P, args.R))
     local p5 = epics.get(string.format("%s%sMoveParams:TCPOffset_Pitch.VAL", args.P, args.R))
     local p6 = epics.get(string.format("%s%sMoveParams:TCPOffset_Yaw.VAL", args.P, args.R))
-    local vel = epics.get(string.format("%s%sMoveParams:Velocity.VAL", args.P, args.R))
-    local acc = epics.get(string.format("%s%sMoveParams:Acceleration.VAL", args.P, args.R))
 
     local url = string.format("http://%s/action?action_name=set_movement_params", args.host)
     local action_vars = {
         tcp_pose = {p1, p2, p3, p4, p5, p6},
-        velocity = vel,
-        acceleration = acc,
+        velocity = A,
+        acceleration = B,
+        gripper_speed = C,
+        gripper_force = D,
     }
 
     local json_args = json.encode(action_vars)
