@@ -109,5 +109,5 @@ record(luascript, "$(P)$(R)PipetteDR:set_post_url") {
     field(CODE, "@ur_module.lua pipette_dr_set_post_url({P='$(P)',R='$(R)',host='$(HOST)'})")
     field(SYNC, "Sync")
     field(OUT, "$(P)$(RQ1)URL.VAL$ PP")
-    # field(FLNK, "$(P)$(RQ1)Post.PROC")
+    field(FLNK, "$(P)$(RQ1)Post.PROC")
 }
