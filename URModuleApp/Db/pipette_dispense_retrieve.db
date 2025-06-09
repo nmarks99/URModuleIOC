@@ -99,8 +99,29 @@ record(bi, "$(P)$(R)PipetteDR:LocationUnits") {
     field(ONAM, "rad")
 }
 
+record(bo, "$(P)$(R)PipetteDR:done_flag") {
+    field(VAL, 0)
+    field(PINI, 1)
+}
+
+record(calcout, "$(P)$(R)PipetteDR:allowed") {
+    field(INPA, "$(P)$(R)PipettePMS:done_flag.VAL CP")
+    field(INPB, "$(P)$(R)PipetteDR:done_flag.VAL CP")
+    field(CALC, "!((A=1) & (B=0))")
+    field(OUT, "$(P)$(R)PipetteDR:Run.DISP")
+}
+
 record(bo, "$(P)$(R)PipetteDR:Run") {
+    field(VAL, 1)
+    field(OUT, "$(P)$(R)PipetteDR:reset_flags.PROC")
     field(FLNK, "$(P)$(R)PipetteDR:set_post_url.PROC")
+}
+
+record(seq, "$(P)$(R)PipetteDR:reset_flags") {
+    field(DOL0, "0")
+    field(LNK0, "$(P)$(R)PipettePMS:done_flag.VAL PP")
+    field(DOL1, "0")
+    field(LNK1, "$(P)$(R)PipetteDR:done_flag.VAL PP")
 }
 
 record(luascript, "$(P)$(R)PipetteDR:set_post_url") {
